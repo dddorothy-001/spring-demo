@@ -1,5 +1,7 @@
 package org.example.pojo;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.io.Serializable;
@@ -10,7 +12,7 @@ public class Fruit implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Schema(description = "主键")
-//    @TableId(value = "id", type = IdType.AUTO)
+    @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
     @Schema(description = "编码")
