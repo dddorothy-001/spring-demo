@@ -26,7 +26,7 @@ public class CodeGenerator {
 
         // 2. 全局配置 (使用Builder模式)
         GlobalConfig globalConfig = new GlobalConfig.Builder()
-                .outputDir("C:\\project\\springboot-demo\\springboot-demo\\src\\main\\java" + "/src/main/java")
+                .outputDir("C:\\project\\springboot-demo\\springboot-demo" + "/src/main/java")
                 .author("Dorothy")
                 .disableOpenDir()                              // 生成后不打开目录
                 .enableSwagger()                               // 开启swagger注解
