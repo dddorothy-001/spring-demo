@@ -5,7 +5,7 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.web.bind.annotation.*;
 
-@Tag(name = "FruitController", description = "水果相关接口")
+@Tag(name = "TestController", description = "水果相关接口")
 @RestController
 @RequestMapping("/goods/fruit")
 public class FruitTestController {
