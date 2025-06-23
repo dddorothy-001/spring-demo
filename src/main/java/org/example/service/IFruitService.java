@@ -1,7 +1,10 @@
 package org.example.service;
 
-import org.example.entity.Fruit;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.example.pojo.Fruit;
+
+import java.math.BigDecimal;
+import java.util.Map;
 
 /**
  * <p>
@@ -13,4 +16,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IFruitService extends IService<Fruit> {
 
+    Fruit selectByName(String name);
+
+    BigDecimal calcPrice(Map<Integer, BigDecimal> map);
+
+    void pay(Map<Integer, BigDecimal> map);
 }

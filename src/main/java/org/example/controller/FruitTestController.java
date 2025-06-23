@@ -22,6 +22,4 @@ public class FruitTestController {
     public Object hello(@Parameter(description = "需要打招呼的人",example="Dorothy") @RequestParam String userName) {
         return "hello" + userName;
     }
-
-
 }
