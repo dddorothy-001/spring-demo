@@ -29,7 +29,7 @@ public class CodeGenerator {
                 .outputDir("C:\\project\\springboot-demo\\springboot-demo" + "/src/main/java")
                 .author("Dorothy")
                 .disableOpenDir()                              // 生成后不打开目录
-                .enableSwagger()                               // 开启swagger注解
+                .enableSpringdoc()                               // 开启swagger注解
                 .dateType(DateType.TIME_PACK)                  // 使用java8时间类型
                 .commentDate("yyyy-MM-dd HH:mm")               // 自定义注释日期格式
                 .build();
@@ -37,7 +37,7 @@ public class CodeGenerator {
         // 3. 包配置
         PackageConfig packageConfig = new PackageConfig.Builder()
                 .parent("org.example")
-                .entity("entity")
+                .entity("pojo")
                 .mapper("mapper")
                 .service("service")
                 .serviceImpl("service.impl")
