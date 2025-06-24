@@ -47,7 +47,7 @@ public class CodeGenerator {
 
         // 4. 策略配置
         StrategyConfig strategyConfig = new StrategyConfig.Builder()
-                .addInclude("record")                           // 需要生成的表
+                .addInclude("order")                           // 需要生成的表
                 .addTablePrefix("t_")                          // 过滤表前缀
                 .entityBuilder()
                 .naming(NamingStrategy.underline_to_camel) // 实体类命名规则
