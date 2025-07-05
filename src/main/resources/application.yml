@@ -1,3 +1,5 @@
+server:
+  port: 8081
 springdoc:
   swagger-ui:
     path: /swagger-ui.html
@@ -12,10 +14,13 @@ springdoc:
       paths-to-match: '/**'
       packages-to-scan: org.example.controller
 
-knife4j:
-  enable: true
-  setting:
-    language: zh_cn
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
+#knife4j:
+#  enable: true
+#  setting:
+#    language: zh_cn
 
 spring:
   datasource:
@@ -23,12 +28,16 @@ spring:
     username: root
     password: root
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
-  security:
-    user:
-      name: admin
-      password: admin
+#  security:
+#    user:
+#      name: admin
+#      password: admin
 
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 强制控制台输出SQL
+
+zookeeper:
+  connect-string: localhost:2181
+  session-timeout: 5000
 
