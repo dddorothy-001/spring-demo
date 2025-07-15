@@ -11,8 +11,6 @@ import org.springframework.context.ConfigurableApplicationContext;
 @MapperScan("org.example.mapper")
 public class SpringBooteDemoApplication {
     public static void main(String[] args) {
-        ConfigurableApplicationContext run = SpringApplication.run(SpringBooteDemoApplication.class, args);
-        System.out.println(123);
-
+        SpringApplication.run(SpringBooteDemoApplication.class, args);
     }
 }
